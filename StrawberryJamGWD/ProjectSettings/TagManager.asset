@@ -44,6 +44,9 @@ TagManager:
   - name: backgrounds
     uniqueID: 3410361959
     locked: 0
+  - name: Particles
+    uniqueID: 2064193705
+    locked: 0
   - name: foregrounds
     uniqueID: 497806859
     locked: 0
