@@ -54,7 +54,6 @@ namespace UnityStandardAssets._2D
 
             if (move != 0)
             {
-                Debug.Log("dsgdsgdsgsdgd");
                 m_Anim.SetBool("move", true);
             }
             else
