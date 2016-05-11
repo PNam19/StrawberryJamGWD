@@ -3584,6 +3584,27 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1544255500 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+  m_PrefabInternal: {fileID: 1631896931}
+--- !u!95 &1544255506
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544255500}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97add11e66e1fc444be90cf925f85101, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1631896931
 Prefab:
   m_ObjectHideFlags: 0
@@ -3702,7 +3723,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_MaxSpeed
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Offset.x
@@ -3823,8 +3844,8 @@ PolygonCollider2D:
       - {x: -1.6233665, y: 0.9351316}
       - {x: -1.0137044, y: 0.65521675}
       - {x: -0.5671285, y: 1.0162361}
-      - {x: -0.116540216, y: 1.3246238}
-      - {x: 0.30653244, y: 1.2964046}
+      - {x: -0.116540216, y: 1.188333}
+      - {x: 0.31401157, y: 1.178286}
       - {x: 1.7378974, y: 0.709362}
       - {x: 2.3170555, y: 0.999456}
       - {x: 2.6216772, y: 0.998252}

@@ -16,7 +16,7 @@ namespace UnityStandardAssets._2D
         private bool m_Grounded;            // Whether or not the player is grounded.
         private Transform m_CeilingCheck;   // A position marking where to check for ceilings
         const float k_CeilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
-        //private Animator m_Anim;            // Reference to the player's animator component.
+        private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
@@ -25,7 +25,7 @@ namespace UnityStandardAssets._2D
             // Setting up references.
             m_GroundCheck = transform.Find("GroundCheck");
             m_CeilingCheck = transform.Find("CeilingCheck");
-           // m_Anim = GetComponent<Animator>();
+            m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
 
@@ -51,6 +51,16 @@ namespace UnityStandardAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
+
+            if (move != 0)
+            {
+                Debug.Log("dsgdsgdsgsdgd");
+                m_Anim.SetBool("move", true);
+            }
+            else
+            {
+                m_Anim.SetBool("move", false);
+            }
             // If crouching, check to see if the character can stand up
             if (!crouch /*&& m_Anim.GetBool("Crouch")*/)
             {
