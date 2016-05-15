@@ -26,7 +26,7 @@ public class InsideDorrTrigger : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow) && colliding)
         {
-            Application.LoadLevel(0);
+            Application.LoadLevel(2);
         }
     }
 }
